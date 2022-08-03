@@ -1,19 +1,47 @@
-import { Container } from './styles';
-import { PlatesIngredients } from '../../components/PlatesIngredients'
+import { Container, Content } from "./styles";
+import { PlatesIngredients } from "../../components/PlatesIngredients";
+import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
+
+import { IoIosArrowBack } from "react-icons/io";
 export function Details() {
-    return (
-        <Container>
+  return (
+    <Container>
+      <Header />
 
-            <img src="https://lh3.googleusercontent.com/56xjPGT3b2DM2q16yEigJxFSQuly2UJjnjuTBiLQRdgaLAlTSan5KXw8fKSh-eVT9nuiUlkWwBNsA-M-PvQi=w1366-h600" alt="" />
+      <main>
+        <div>
+          <button className="backToPage">
+            <IoIosArrowBack />
+            Voltar
+          </button>
+        </div>
 
-            <PlatesIngredients
-                data={{
-                    title: "Salada Ravanello",
-                    description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.",
-                    tags: [{name: "alface"}, {name: "tomate"}, {name: "rabanete"}, {name: "pão naan"}],
-                    price: "R$ 25,97"
-                }}
-                />
-        </Container>
-    );
+        <Content>
+          <img
+            className="plate"
+            src="https://lh5.googleusercontent.com/WiwmcTQKRCm_r0TnIKw6uLIqtJCJVJo_TFTemMqri5kHEUbTiCUrDxopB93ndPLTWzQjXXcOUacP37sWqCAc=w1366-h657"
+            alt=""
+          />
+
+          <PlatesIngredients
+            data={{
+              title: "Salada Ravanello",
+              description:
+                "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.",
+              tags: [
+                { name: "alface" },
+                { name: "tomate" },
+                { name: "rabanete" },
+                { name: "pão naan" },
+              ],
+              price: "R$ 25,97",
+            }}
+          />
+        </Content>
+      </main>
+
+      <Footer/>
+    </Container>
+  );
 }

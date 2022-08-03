@@ -6,6 +6,7 @@ export const Container = styled.div`
     align-items: center;
     background: ${({theme}) => theme.COLORS.BACKGROUND_900};
     color: ${({theme}) => theme.COLORS.WHITE};
+    border: 1px solid ${({theme}) => theme.COLORS.WHITE};
     border-radius: 10px;
     > input {
         height: 56px;
@@ -13,8 +14,7 @@ export const Container = styled.div`
         padding: 12px;
         color: ${({theme}) => theme.COLORS.WHITE};
         background: transparent;
-        border: 1px solid ${({theme}) => theme.COLORS.WHITE};
-        border-radius: 5px;
+        border: none;
         font-size: 18px;
         &::placeholder {
             color: ${({theme}) => theme.COLORS.GRAY_300};
