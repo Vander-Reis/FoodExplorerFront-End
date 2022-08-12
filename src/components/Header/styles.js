@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
+
     padding: 0 123px;
     width: 100%;
     height: 104px;
@@ -11,6 +12,10 @@ export const Container = styled.div`
     background: #00111A;
     
     grid-area: header;
+
+    >.menu-mobile {
+        display: none;
+    }
 
     > .logo {
         display: flex;
@@ -46,6 +51,35 @@ export const Container = styled.div`
         svg {
             font-size: 32px;
             color: ${({theme}) => theme.COLORS.WHITE};
+        }
+    }
+
+    @media(max-width: 1000px) {
+        width: 120%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 130px;
+        
+        button {
+            display: none;
+        }
+
+        .logout {
+            display: none;
+        }
+
+        > .logo {
+            display: none;
+        }
+
+        .menu-mobile {
+            
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 `;

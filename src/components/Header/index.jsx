@@ -14,6 +14,10 @@ export function Header() {
                 <h1>food explorer</h1>
             </div>
 
+            <div className="menu-mobile">
+                =
+            </div>
+
             <ButtonText title="Meus favoritos"/>
 
             <Input className="input"
