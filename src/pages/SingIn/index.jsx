@@ -22,7 +22,7 @@ export function SingIn() {
                 <label htmlFor="userPassword">Senha</label>
                 <Input type="password" id="userPassword" placeholder="No mínimo 6 caracteres"/>
 
-                <Button title="Entrar"/>
+                <Button className="button-form" title="Entrar"/>
 
                 <a href="/">Criar uma conta</a>
             </Form>

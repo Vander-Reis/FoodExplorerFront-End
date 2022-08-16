@@ -8,13 +8,13 @@ export const Container = styled.section`
     }
     > div {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 27px;
     }
 
-    @media (max-width: 1350px) {
+    @media (min-width: 1450px) {
         > div {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             
         }
     }

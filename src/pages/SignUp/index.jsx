@@ -25,7 +25,7 @@ export function SignUp() {
                 <label htmlFor="userPassword">Senha</label>
                 <Input type="password" id="userPassword" placeholder="No mínimo 6 caracteres"/>
 
-                <Button title="Criar conta"/>
+                <Button className="button-form" title="Criar conta"/>
 
                 <a href="/">Já tenho uma conta</a>
             </Form>

@@ -50,6 +50,10 @@ export const Form = styled.form`
         color: ${({ theme }) => theme.COLORS.WHITE};
     }
 
+    > .button-form {
+        margin-top: 18px;
+    }
+
     @media (max-width: 500px) {
         margin-top: 0;
         width: 100%;
