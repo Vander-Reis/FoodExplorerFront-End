@@ -10,6 +10,40 @@ export const Container = styled.div`
     > main {
         grid-template-areas: content;
         padding: 38px 132px 122px 132px;
+
+        .button-back {
+          background: transparent;
+          border: none;
+          display: flex;
+          align-items: center;
+          gap: 11px;
+          font-weight: 500;
+          font-size: 24px;
+          color: #E1E1E6;
+          margin-bottom: 24px;
+        }
+    }
+
+    > header {
+      grid-template-areas: header;
+      display: flex;
+      padding: 0 123px;
+      height: 104px;
+      background: #00111A;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
     }
 `;
 
@@ -21,6 +55,7 @@ export const Form = styled.form`
         display: flex;
         align-items: center;
         justify-content: end;
+        margin-top: 40px;
 
         button {
           width: 357px;
@@ -37,7 +72,7 @@ export const Form = styled.form`
 `;
 
 export const InputItem = styled.div`
-  height: 56px;
+  height: fit-content;
   border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
   border-radius: 8px;
   display: flex;

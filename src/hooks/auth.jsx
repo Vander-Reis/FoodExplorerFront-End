@@ -19,6 +19,8 @@ function AuthProvider({ children }) {
             api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
             setData({user, token});
+
+            console.log(user, token)
         }
 
         catch (error) {
