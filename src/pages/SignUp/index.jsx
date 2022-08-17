@@ -1,6 +1,7 @@
 import { Container, Form } from './styles';
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
+import { Link } from 'react-router-dom';
 import PolygonPng from '../../assets/Polygon.svg'
 
 export function SignUp() {
@@ -27,7 +28,7 @@ export function SignUp() {
 
                 <Button className="button-form" title="Criar conta"/>
 
-                <a href="/">Já tenho uma conta</a>
+                <Link to="/">Já tenho uma conta</Link>
             </Form>
 
         </Container>

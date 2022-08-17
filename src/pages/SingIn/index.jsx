@@ -1,7 +1,9 @@
 import { Container, Form } from './styles';
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
+import { Link } from 'react-router-dom';
 import PolygonPng from '../../assets/Polygon.svg'
+
 
 export function SingIn() {
     return (
@@ -24,7 +26,7 @@ export function SingIn() {
 
                 <Button className="button-form" title="Entrar"/>
 
-                <a href="/">Criar uma conta</a>
+                <Link to="/register">Criar uma conta</Link>
             </Form>
 
         </Container>
