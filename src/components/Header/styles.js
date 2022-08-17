@@ -38,6 +38,14 @@ export const Container = styled.div`
         white-space: nowrap;    
     }
 
+    > .buttonText {
+        background: transparent;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: #C4C4CC;
+    }
+
     > .logout {
         background: transparent;
         border: none;

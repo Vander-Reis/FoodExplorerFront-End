@@ -1,11 +1,22 @@
+import { useState } from 'react';
 import { Container, Form } from './styles';
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { Link } from 'react-router-dom';
 import PolygonPng from '../../assets/Polygon.svg'
-
+import { useAuth } from '../../hooks/auth';
 
 export function SingIn() {
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const { signIn } = useAuth();
+
+    function handleSignIn() {
+        signIn({email, password});
+    }
+
     return (
         <Container>
 
@@ -19,12 +30,23 @@ export function SingIn() {
                 <h1>Faça login</h1>
 
                 <label htmlFor="userEmail">Email</label>
-                <Input type="email" id="userEmail" placeholder="Exemplo: exemplo@exemplo.com.br"/>
+                <Input 
+                type="email" 
+                id="userEmail" 
+                placeholder="Exemplo: exemplo@exemplo.com.br"
+                onChange={e => setEmail(e.target.value)}/>
 
                 <label htmlFor="userPassword">Senha</label>
-                <Input type="password" id="userPassword" placeholder="No mínimo 6 caracteres"/>
+                <Input 
+                type="password" 
+                id="userPassword" 
+                placeholder="No mínimo 6 caracteres"
+                onChange={e => setPassword(e.target.value)}/>
 
-                <Button className="button-form" title="Entrar"/>
+                <Button 
+                className="button-form" 
+                title="Entrar"
+                onClick={handleSignIn}/>
 
                 <Link to="/register">Criar uma conta</Link>
             </Form>
