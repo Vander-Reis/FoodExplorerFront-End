@@ -55,6 +55,8 @@ export function New() {
       formData.append('ingredients', ingredients[i]);
     }
 
+    console.log(ingredients)
+
     await api.post("/plates", formData)
     .then(alert("Prato criado com sucesso!"))
     .catch(error => {
@@ -104,7 +106,6 @@ export function New() {
               <Input
                 id="file-img"
                 type="file"
-                accept="image/png, image/jpeg"
                 placeholder="Selecione imagem"
                 icon={MdOutlineFileUpload}
                 onChange={e => setImageFile(e.target.value)}
