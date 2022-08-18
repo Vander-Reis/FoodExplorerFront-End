@@ -20,7 +20,7 @@ export function AppRoutes() {
             <>
             <Route path="/new" element={<New/>}/>
             </>}
-            <Route path="/Details/:id" element={<Details/>}/>
+            <Route path="/details/:id" element={<Details/>}/>
         </Routes>
     );
 }

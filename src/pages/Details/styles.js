@@ -48,4 +48,62 @@ export const Content = styled.div`
         width: 390px;
         height: 390px;
         }
+
+        > .information {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            width: 600px;
+
+            .description h2{
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 140%;
+                color: #E1E1E6;
+            }
+
+            .description p {
+                font-weight: 400;
+                font-size: 24px;
+                color: #E1E1E6;
+                margin-top: 8px;
+            }
+
+            .ingredients {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 23px;
+                margin-top: 27px;
+            }
+
+            .price {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                margin-top: 40px;
+                strong {
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 160%;
+                    text-align: center;
+                    color: #82F3FF;
+                }
+
+                .count {
+                    display: flex;
+                    align-items: center;
+                    gap: 18px;
+                    font-size: 20px;
+                    line-height: 160%;
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            
+                button {
+                    width: 100px;
+                }
+            }
+        }
 `;

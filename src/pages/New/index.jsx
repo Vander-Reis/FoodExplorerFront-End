@@ -16,7 +16,6 @@ export function New() {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
-  const [type, setType] = useState("");
   const [imageFile, setImageFile] = useState(null);
 
   const navigate = useNavigate();
@@ -39,7 +38,7 @@ export function New() {
   }
 
   async function handleNewPlate() {
-    if (!title || !price || !description || !type) {
+    if (!title || !price || !description) {
       alert("Favor preecha todos os campos!");
     }
 
@@ -51,7 +50,6 @@ export function New() {
       formData.append("title", title);
       formData.append("description", description);
       formData.append("price", price);
-      formData.append("type", type);
 
       for (let i = 0; i < ingredients.length; i += 1) {
         formData.append("ingredients", ingredients[i]);
@@ -167,17 +165,6 @@ export function New() {
                 id="text-area"
                 placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"
                 onChange={(e) => setDescription(e.target.value)}
-              />
-            </div>
-          </InputWrapper>
-
-          <InputWrapper>
-            <div className="textarea">
-              <label htmlFor="type">Escolha seu tipo de prato</label>
-              <Input
-                id="type"
-                placeholder=" 1 = Pratos principais, 2 = Sobremesas, 3 = Bebidas"
-                onChange={(e) => setType(e.target.value)}
               />
             </div>
           </InputWrapper>
