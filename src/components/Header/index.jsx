@@ -8,7 +8,7 @@ import { Button } from "../Button";
 import { useAuth } from "../../hooks/auth";
 import { useNavigate } from 'react-router-dom'; 
 
-export function Header() {
+export function Header( { setSearch } ) {
 
   const { signOut, user } = useAuth();
 
@@ -40,6 +40,7 @@ export function Header() {
             className="input"
             icon={FiSearch}
             placeholder="Busque pelas opções de pratos"
+            onChange={e => setSearch(e.target.value)}
           />
 
       <Button icon={PedidoPng} title="Meu pedido (0)" />

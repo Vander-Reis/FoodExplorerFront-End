@@ -1,11 +1,17 @@
 import { Container } from './styles';
-import imagemTeste from '../../assets/imgTeste.png';
 import { Button } from '../Button';
+import { api } from '../../service/api';
+import { useAuth } from '../../hooks/auth';
 
 export function FoodCard({ data }) {
+
+    const imageURl = `${api.defaults.baseURL}/files/${data.img}`
+
+    console.log(imageURl)
+
     return (
         <Container>
-            <img src={imagemTeste} alt="" />
+            <img src={imageURl} alt={data.title} />
 
             <button>
                 <h3>{data.title}</h3>

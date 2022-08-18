@@ -30,19 +30,19 @@ Atende a todas as especificações descritas
 
 ✔️ Um arquivo README.md com as especificações sobre como executar o projeto em um ambiente dev.
 
-⌛ Os usuários deverão se autenticar para entrar na aplicação através da tela de login, você pode aplicar o que aprendeu nas aulas de autenticação JWT. A autenticação deve ser validada com senha.
+✔️ Os usuários deverão se autenticar para entrar na aplicação através da tela de login, você pode aplicar o que aprendeu nas aulas de autenticação JWT. A autenticação deve ser validada com senha.
 
-⌛ O admin irá fazer upload de imagens para cadastrar os pratos.
+✔️ O admin irá fazer upload de imagens para cadastrar os pratos.
 
 ⌛ Para finalizar, faça o deploy da sua aplicação.
 
-⌛ Dê nomes significativos para as suas funções e variáveis: trabalhe um pouco com os conceitos do Clean Code.
+✔️ Dê nomes significativos para as suas funções e variáveis: trabalhe um pouco com os conceitos do Clean Code.
 
-⌛ Os dados do admin, do restaurante e dos usuários serão armazenados em um banco de dados.
+✔️ Os dados do admin, do restaurante e dos usuários serão armazenados em um banco de dados.
 
-⌛ Possibilidade de fazer uma busca pelo nome do prato, pelos ingredientes ou por prato favorito
+✔️ Possibilidade de fazer uma busca pelo nome do prato, pelos ingredientes ou por prato favorito
 
-⌛ É essencial que a sua interface consuma a sua própria API.
+✔️ É essencial que a sua interface consuma a sua própria API.
 
 ⌛ Interessante deixar a aplicação responsiva: utilize o conceito de Mobile First que foi aprendido em aula.
 

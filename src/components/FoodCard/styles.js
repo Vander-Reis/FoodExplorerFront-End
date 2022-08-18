@@ -13,6 +13,12 @@ export const Container = styled.div `
     justify-content: center;
     align-items: center;
 
+    > img {
+        width: 176px;
+        height: 176px;
+        border-radius: 50%;
+    }
+
     > button {
         border: none;
         background: transparent;
