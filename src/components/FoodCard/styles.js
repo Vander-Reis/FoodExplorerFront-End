@@ -12,6 +12,7 @@ export const Container = styled.div `
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     > img {
         width: 176px;
@@ -61,5 +62,25 @@ export const Container = styled.div `
             font-weight: 700;
             font-size: 20px;
         }
+    }
+
+    >.favorites {
+        font-size: 20px;
+        color: ${({theme}) => theme.COLORS.WHITE};
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+
+    >.edit-plate {
+        font-size: 20px;
+        color: ${({theme}) => theme.COLORS.WHITE};
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 20px;
     }
 `;

@@ -57,14 +57,38 @@ Atende a todas as especificações descritas
 <img src="https://img.shields.io/badge/React-05122A?style=flat&logo=react" alt="react Badge" height="25">&nbsp;
 
 ## Installation
+
+A aplicação e composta por 2 partes, back-end e front-end use os seguintes comandos para a aplicação rodar.
+
 To Install this project, follow the steps above:
 ```bash
+// back-end
+git clone https://github.com/Vander-Reis/foodExplorerBack-end
+
+// front-end
 git clone https://github.com/Vander-Reis/FoodExplorerFront-End
 ```
 
 ## Usage
+
 To use this project, follow the steps above:
 ```bash
+
+// rodar o back-end
+$ npm install
+
+$ npx knex migrate:latest
+
+$ npx knex seed:run
+
+// rodar o servidor
+$ npm run dev
+
+// usuario adm para fazer os testes
+email: admin@teste.com
+senha: 123456789
+
+// rodar o front-end
 // intalar todas as dependências 
 npm install 
 
