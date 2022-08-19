@@ -34,7 +34,7 @@ Atende a todas as especificações descritas
 
 ✔️ O admin irá fazer upload de imagens para cadastrar os pratos.
 
-⌛ Para finalizar, faça o deploy da sua aplicação.
+✔️ Para finalizar, faça o deploy da sua aplicação.
 
 ✔️ Dê nomes significativos para as suas funções e variáveis: trabalhe um pouco com os conceitos do Clean Code.
 
