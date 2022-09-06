@@ -7,7 +7,17 @@ import { Footer } from "../../components/Footer";
 import { FoodCard } from "../../components/FoodCard";
 import { api } from "../../service/api";
 
+import Carousel from 'react-elastic-carousel';
+
 export function Home() {
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 910, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
+
   const [search, setSearch] = useState("");
   const [plates, setPlates] = useState([]);
   let typePlates;
@@ -44,9 +54,35 @@ export function Home() {
         <Section title="Pratos principais">
           {plates.length > 0 && (
             <>
-              {plates.map((item, index) => (
+            <Carousel breakPoints={breakPoints} pagination={false}>
+            {plates.map((item, index) => (
                 <FoodCard key={index} data={item} />
               ))}
+            </Carousel>
+            </>
+          )}
+        </Section>
+
+        <Section title="Pratos principais">
+          {plates.length > 0 && (
+            <>
+            <Carousel breakPoints={breakPoints} pagination={false}>
+            {plates.map((item, index) => (
+                <FoodCard key={index} data={item} />
+              ))}
+            </Carousel>
+            </>
+          )}
+        </Section>
+
+        <Section title="Pratos principais">
+          {plates.length > 0 && (
+            <>
+            <Carousel breakPoints={breakPoints} pagination={false}>
+            {plates.map((item, index) => (
+                <FoodCard key={index} data={item} />
+              ))}
+            </Carousel>
             </>
           )}
         </Section>

@@ -11,10 +11,13 @@ export function SingIn() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    const [loading, setLoading] = useState(false);
+
     const { signIn } = useAuth();
 
     function handleSignIn() {
         signIn({email, password});
+        setLoading(true);
     }
 
     return (
@@ -46,6 +49,7 @@ export function SingIn() {
                 <Button 
                 className="button-form" 
                 title="Entrar"
+                loading={loading}
                 onClick={handleSignIn}/>
 
                 <Link to="/register">Criar uma conta</Link>
